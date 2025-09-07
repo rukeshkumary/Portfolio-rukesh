@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y Rukesh Kumar - Portfolio</title>
+    <style>
+        :root {
+            --blue: #4285F4;
+            --red: #EA4335;
+            --yellow: #FBBC05;
+            --green: #34A853;
+            --text: #202124;
+        }
+
+
+        #education {
+            background-color: #E8F0FE;
+        }
+
+        #internships {
+            background-color: #FDE7E9;
+        }
+
+        #projects {
+            background-color: #FFF7E0;
+        }
+
+        #skills {
+            background-color: #E6F4EA;
+        }
+
+        #certifications {
+            background-color: #F5F5F5;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--blue);
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--red);
+        }
+
+        header {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid var(--blue);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--blue);
+            animation: slideIn 1.5s ease-out;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--text);
+            animation: fadeIn 2s ease-in;
+        }
+
+        nav a {
+            margin: 0 10px;
+            font-weight: 500;
+            animation: fadeIn 2.5s ease-in;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease-out;
+        }
+
+        section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section h2 {
+            color: var(--text);
+            margin-bottom: 20px;
+            border-bottom: 2px solid;
+            padding-bottom: 5px;
+        }
+
+        #education h2 {
+            border-color: var(--blue);
+            color: var(--blue);
+        }
+
+        #internships h2 {
+            border-color: var(--red);
+            color: var(--red);
+        }
+
+        #projects h2 {
+            border-color: var(--yellow);
+            color: var(--yellow);
+        }
+
+        #skills h2 {
+            border-color: var(--green);
+            color: var(--green);
+        }
+
+        #certifications h2 {
+            border-color: var(--text);
+            color: var(--text);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-content">
+            <img src="rukesh-photo1.png" alt="Y Rukesh Kumar" class="profile-photo">
+            <h1>Y Rukesh Kumar</h1>
+            <p>Computer Science Graduate | AI/ML Enthusiast | Aspiring Google Apprentice</p>
+            <nav>
+                <a href="#education">Education</a>
+                <a href="#internships">Internships</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech in Computer Science and Engineering</strong>, Sree Vidyanikethan Engineering College
+                (2021-2025) | CGPA: 8.67/10</li>
+            <li><strong>Intermediate</strong>, Sri Chaitanya Boys Junior College (2019-2021) | 95%</li>
+        </ul>
+    </section>
+
+    <section id="internships">
+        <h2>Internships</h2>
+        <ul>
+            <li><strong>AI/ML Virtual Internship</strong> – Google / AICTE Eduskills (Dec 2023 - Jan 2024)
+                <ul>
+                    <li>Worked on applied machine learning concepts focusing on model development and evaluation.</li>
+                    <li>Implemented ML algorithms and explored real-world applications in AI-driven systems.</li>
+                </ul>
+            </li>
+            <li><strong>Salesforce Developer Virtual Internship</strong> – Salesforce (Aug 2023 - Oct 2023)
+                <ul>
+                    <li>Developed apps using Apex and Lightning Web Components.</li>
+                    <li>Automated workflows, reducing manual reporting by 35%.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Rice Plant Disease Detection (Deep Learning, InceptionV3)</strong>
+                <ul>
+                    <li>Developed a deep learning model to classify rice plant diseases from leaf images with 99% test
+                        accuracy.</li>
+                    <li>Organized dataset into training, validation, and testing sets with data augmentation.</li>
+                    <li>Built scalable pipeline for real-time detection to aid farmers in early disease identification.
+                    </li>
+                </ul>
+            </li>
+            <li><strong>AI Outfit Selector (Deep Learning + Recommendation System) - In Development</strong>
+                <ul>
+                    <li>Designing a computer vision model to detect clothing styles, colors, and patterns.</li>
+                    <li>Integrating recommendation system to suggest outfits based on weather, occasion, and
+                        preferences.</li>
+                </ul>
+            </li>
+            <li><strong>Smart Task Manager (Java + MySQL)</strong>
+                <ul>
+                    <li>Designed productivity tool with CRUD operations, reminders, and priority-based task sorting.
+                    </li>
+                    <li>Optimized SQL queries to improve task retrieval speed by 50%.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Java, Python, SQL, C, HTML, CSS, JavaScript</li>
+            <li><strong>Frameworks / Technologies:</strong> ReactJS, Bootstrap, AI, ML</li>
+            <li><strong>Databases:</strong> MySQL, MongoDB</li>
+            <li><strong>Tools:</strong> Git, GitHub, AWS</li>
+            <li><strong>Systems:</strong> Linux/Unix, Windows, MacOS</li>
+            <li><strong>Coding Platforms:</strong> LeetCode (350+), GFG (200+)</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Networking Essentials – Cisco</li>
+            <li>Python for Data Science – NPTEL</li>
+            <li>DSA with Java – GeeksforGeeks</li>
+        </ul>
+    </section>
+
+    <script>
+
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+
+</html>
